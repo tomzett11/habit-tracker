@@ -39,6 +39,10 @@
     .stat-value{display:block;margin-top:7px;font-size:18px;line-height:1.25;font-weight:750;letter-spacing:-.02em;overflow-wrap:anywhere}
     .stat-value.compact{font-size:15px}
     @media(min-width:520px){.stats-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    .day.today{outline:none;z-index:auto;box-shadow:inset 0 0 0 2px var(--today-outline)}
+    .day.today::after{display:none}
+    .day.today.done{background:var(--habit);color:var(--day-mark,#fff);box-shadow:inset 0 0 0 2px var(--today-outline)}
+    :root[data-theme="dark"] .day.today.done{background:var(--habit);color:var(--day-mark,#fff);box-shadow:inset 0 0 0 2px var(--today-outline)}
     .check{display:grid;place-items:center}
     .check.done{color:var(--day-mark,#fff)}
     @media(min-width:600px){.heat-scroll{--heat-cell:15px}}
