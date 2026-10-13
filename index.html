@@ -46,8 +46,8 @@
     .check{display:grid;place-items:center}
     .check.done{color:var(--day-mark,#fff)}
     @media(min-width:600px){.heat-scroll{--heat-cell:15px}}
-    .month-grid{grid-auto-rows:36px;align-items:stretch}
-    .month-grid>.day{height:100%;min-height:0;aspect-ratio:auto;align-self:stretch;margin:0;padding:0;transform:none;vertical-align:top}
+    .month-grid{grid-auto-rows:1fr;align-items:stretch}
+    .month-grid>.day{width:100%;height:auto;min-height:0;aspect-ratio:1;align-self:center;margin:0;padding:0;transform:none;vertical-align:top}
   </style>
 </head>
 <body>
